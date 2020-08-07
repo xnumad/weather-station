@@ -1,0 +1,3 @@
+https://grafana.com/docs/installation/configuration/#config-file-locations
+https://grafana.com/docs/auth/overview/#anonymous-authentication
+https://grafana.com/docs/reference/export_import/#importing-a-dashboard 

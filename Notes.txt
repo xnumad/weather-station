@@ -1,0 +1,14 @@
+https://linuxize.com/post/install-mariadb-on-centos-7/
+https://linuxize.com/post/how-to-create-a-mysql-database/
+https://github.com/opsxcq/arduino-temperature-monitor/
+http://cactus.io/projects/weather/arduino-weather-station
+https://www.ctl.io/developers/blog/post/temperature-logger
+
+Bash random fill:
+BACKEND='https://server/input.php'
+while true; do clear; date; curl -i -H "Accept: text/html" -X GET $BACKEND'?password=pw&station_id=1&temperature='$(( ( RANDOM % 26 ) + 55))'&relative_humidity='$(( ( RANDOM % 66 ) + 15 )); sleep 5; done;
+
+SQL Group filtering -> PHP Interface
+SELECT * FROM measurements WHERE station_id = ANY (SELECT id FROM stations 	WHERE `group` = <inputgroup>)
+
+If GET parameter id is not specified -> value for group in query empty -> invalid query -> no result set
